@@ -17,7 +17,7 @@ Console.WriteLine($"You walk up to the dairy section and see milk for ${milkPric
 Console.WriteLine("If you want milk please type milk! Type cheese for cheese and say none for neither!");
 
 //This code reads user input to detect if the shopper wants some milk
-string dairyChoice = Console.ReadLine();
+ string dairyChoice = Console.ReadLine();
 if (dairyChoice == "milk")
 {   
     /*Below is code that compares current funds to the milk price. 
@@ -29,6 +29,7 @@ if (dairyChoice == "milk")
         
         //Text printed to the screen that informs the shopper the milk purchase was successful
         Console.WriteLine($"You got the milk! Your current funds are now ${heldFunds}. Lets look for meat now.");
+       
     }
     else
     {
@@ -105,5 +106,7 @@ if (meatChoice == "none")
 {
     Console.WriteLine("You did not buy any meat products. Let's move on.");
 }
+Console.WriteLine("-----------");
+Console.WriteLine($"Thank you for shopping with us! You now have {heldFunds}.");
 
 
